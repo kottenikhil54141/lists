@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+<!-- Form starts here -->
+<form action="#" method="post"><!-- The action attribute defines where the form data will be sent upon submission, and method="post" specifies data submission method -
+<!-- Table for better layout -->
+<table border="1" cellspacing="5" cellpadding="10"><!-- Border, cellspacing, and cellpadding for styling -->
+<tr>
+<thcolspan="2">Personal Information</th><!-- Table header for section -->
+</tr>
+<!-- Row for Name -->
+<tr>
+<td><label for="name">Full Name:</label></td><!-- <label> is used to define a label for the input field -->
+<td><input type="text" id="name" name="name" required></td><!-- Text field for full name -->
+</tr>
+<!-- Row for Email -->
+<tr>
+<td><label for="email">Email Address:</label></td>
+<td><input type="email" id="email" name="email" required></td><!-- Email field for entering email address -->
+</tr>
+<!-- Row for Password -->
+<tr>
+<td><label for="password">Password:</label></td>
+<td><input type="password" id="password" name="password" required></td><!-- Password field for secure input -->
+</tr>
+<!-- Row for Phone Number -->
+<tr>
+<td><label for="phone">Phone Number:</label></td>
+<td><input type="number" id="phone" name="phone" required></td><!-- Number field for phone number -->
+</tr>
+<!-- Row for Date of Birth -->
+<tr>
+<td><label for="dob">Date of Birth:</label></td>
+<td><input type="date" id="dob" name="dob" required></td><!-- Date field to select date of birth -->
+</tr>
+<!-- Row for Gender (Radio buttons) -->
+<tr>
+<td><label>Gender:</label></td>
+<td>
+<input type="radio" id="male" name="gender" value="Male" required><!-- Radio button for Male -->
+<label for="male">Male</label>
+<input type="radio" id="female" name="gender" value="Female" required><!-- Radio button for Female -->
+<label for="female">Female</label>
+</td>
+</tr>
+<!-- Row for Hobbies (Checkboxes) -->
+<tr>
+<td><label>Hobbies:</label></td>
+<td>
+<input type="checkbox" id="reading" name="hobbies" value="Reading"><!-- Checkbox for Reading -->
+<label for="reading">Reading</label>
+<input type="checkbox" id="travelling" name="hobbies" value="Travelling"><!-- Checkbox for Travelling -->
+<label for="travelling">Travelling</label>
+<input type="checkbox" id="sports" name="hobbies" value="Sports"><!-- Checkbox for Sports -->
+<label for="sports">Sports</label>
+</td>
+</tr>
+<!-- Row for Country (List Box) -->
+<tr>
+<td><label for="country">Country:</label></td>
+<td>
+<select id="country" name="country" required><!--<select> creates a drop-down list -->
+<option value="USA">United States</option><!--<option> defines options within the select list -->
+<option value="India">India</option>
+<option value="UK">United Kingdom</option>
+<option value="Australia">Australia</option>
+</select>
+</td>
+</tr>
+<!-- Row for Comments (Text Area) -->
+<tr>
+<td><label for="comments">Additional Comments:</label></td>
+<td><textarea id="comments" name="comments" rows="4" cols="50"></textarea></td><!-- Text area for comments -->
+</tr>
+<!-- Row for Submit and Reset Buttons -->
+<tr>
+<td colspan="2" style="text-align:center;">
+<input type="submit" value="Submit"><!-- Submit button to send the form data -->
+<input type="reset" value="Reset"><!-- Reset button to clear the form fields -->
+</td>
+</tr>
+</table>
+</form>
+<!-- Form ends here -->
+</body>
+</html>
